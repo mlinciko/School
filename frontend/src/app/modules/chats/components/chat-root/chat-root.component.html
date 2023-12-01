@@ -1,0 +1,27 @@
+<ng-container *ngIf="chats.length; else noChatsTemplate">
+  <div class="chats-container">
+    <ng-container *ngFor="let chat of chats" >
+      <div class="chat" class="chat" [routerLink]="getRouterLink(chat)">
+        <div class="chat-image">
+        <div class="chat-image__no-image-icon">
+          <fa-icon [icon]="bookIcon"></fa-icon>
+        </div>
+        </div>
+        <div class="chat-data">
+          <div class="chat-title">
+            {{chat.name}}
+          </div>
+          <div class="chat-companion">{{chat.name}}</div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
+<ng-template #noChatsTemplate>
+  <div class="chats-not-found">
+    <fa-icon class="chats-not-found__icon" [icon]="bookIcon"></fa-icon>
+    <div class="chats-not-found__title">
+      You don't have chats yet
+    </div>
+  </div>
+</ng-template>

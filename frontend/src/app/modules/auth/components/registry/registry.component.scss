@@ -1,0 +1,46 @@
+.registry-container {
+  width: 300px;
+  margin: 40px auto 0;
+
+  .registry-back {
+    color: #478FFC;
+    cursor:pointer;
+    display:block;
+    margin-bottom:10px;
+  }
+
+  .registry-image {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .registry-title {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .registry-rememberme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+
+    .registry-rememberme-title {
+      font-size: 12px;
+    }
+  }
+}
+
+:host {
+  ::ng-deep {
+    .remember-me {
+      flex-grow: 0!important;
+      margin: 0 auto;
+    }
+  }
+}

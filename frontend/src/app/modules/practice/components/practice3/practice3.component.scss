@@ -1,0 +1,35 @@
+.loading {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.wrapper {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container {
+  border: 2px solid #478FFC;
+  border-radius:10px;
+  width: 340px;
+  margin:20px;
+  padding:20px;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .dx-form {
+    height: auto;
+  }
+
+  .dx-button {
+    margin-top:10px;
+  }
+
+  .result {
+    margin-top:10px;
+  }
+}

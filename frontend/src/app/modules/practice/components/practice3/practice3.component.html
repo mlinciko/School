@@ -1,0 +1,89 @@
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="title">Task 18</div>
+    <dx-form #form1 width="300px" [(formData)]='formData1' [items]="formItems1">
+    </dx-form>
+    <div  *ngFor="let res of result1" class="result">
+      {{res}}
+    </div>
+    <dx-button
+          stylingMode="contained"
+          text="Submit"
+          type="default"
+          width="100%"
+          (onClick)="submitForm1()"
+      >
+    </dx-button>
+  </div>
+
+  <div class="container">
+    <div class="title">Task 21</div>
+    <dx-form #form2 width="300px" [(formData)]='formData2' [items]="formItems2">
+    </dx-form>
+    <div  *ngIf="result2" class="result">
+      {{result2}}
+    </div>
+    <dx-button
+          stylingMode="contained"
+          text="Submit"
+          type="default"
+          width="100%"
+          (onClick)="submitForm2()"
+      >
+    </dx-button>
+  </div>
+
+  <div class="container">
+    <div class="title">Task 24</div>
+    <dx-form #form3 width="300px" [(formData)]='formData3' [items]="formItems3">
+    </dx-form>
+    <div  *ngIf="result3" class="result">
+      {{result3}}
+    </div>
+    <dx-button
+          stylingMode="contained"
+          text="Submit"
+          type="default"
+          width="100%"
+          (onClick)="submitForm3()"
+      >
+    </dx-button>
+  </div>
+
+  <div class="container">
+    <div class="title">Task 27</div>
+    <dx-form #form4 width="300px" [(formData)]='formData4' [items]="formItems4">
+    </dx-form>
+    <div  *ngIf="result4 !== undefined" class="result">
+      {{result4}}
+    </div>
+    <dx-button
+          stylingMode="contained"
+          text="Submit"
+          type="default"
+          width="100%"
+          (onClick)="submitForm4()"
+      >
+    </dx-button>
+  </div>
+
+  <div class="container">
+    <div class="title">Task 30</div>
+    <dx-form #form5 width="300px" [(formData)]='formData5' [items]="formItems5">
+    </dx-form>
+    <div  *ngIf="result5" class="result">
+      {{result5}}
+    </div>
+    <dx-button
+          stylingMode="contained"
+          text="Submit"
+          type="default"
+          width="100%"
+          (onClick)="submitForm5()"
+      >
+    </dx-button>
+  </div>
+</div>

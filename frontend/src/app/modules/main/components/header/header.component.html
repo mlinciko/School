@@ -1,0 +1,32 @@
+<div class="header-wrapper">
+  <div class="header-container">
+    <div class="header-logo" [routerLink]="['/']">
+      <img src="../../../../../assets/icons/main-icon-transparent.svg" alt="logo">
+    </div>
+
+    <dx-button
+        stylingMode="contained"
+        text="Practices"
+        type="default"
+        width="100px"
+        (onClick)="toPractice()"
+    >
+  </dx-button>
+  
+    <div *ngIf="isUserAuthorized" class="header-account" [routerLink]="['/account']">
+      <ng-container *ngIf="user.image; else noImage">
+        <img class="account-image" [src]="getUserImage(user.image)" alt="image">
+      </ng-container>
+      <ng-template #noImage>
+        <fa-icon class="account-icon" [icon]="noImageIcon"></fa-icon>
+      </ng-template>
+      <div class="account-data">
+        <div class="account-name">{{user.first_name}} {{user.last_name}}</div>
+      </div>
+    </div>
+
+    <div class="header-signin" *ngIf="!isUserAuthorized" matTooltip="Sign in" [routerLink]="['/sign']">
+      <fa-icon [icon]="signinIcon"></fa-icon>
+    </div>
+  </div>
+</div>

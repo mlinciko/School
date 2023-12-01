@@ -1,0 +1,14 @@
+.wrapper {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #EAE9E5;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+app-footer {
+  flex: 0 0 auto;
+}

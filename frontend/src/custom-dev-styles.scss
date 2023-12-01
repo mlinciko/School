@@ -1,0 +1,180 @@
+.dx-gallery-indicator-item-active, .dx-gallery-indicator-item-selected {
+  background: #478FFC; 
+}
+.dx-widget input, .dx-widget textarea {
+  font-family: 'Poppins', sans-serif;
+}
+.dx-gallery-indicator-item {
+  background: #fff; 
+}
+.dx-button-mode-contained.dx-button-default {
+  background-color: #478FFC;
+  border-radius: 20px;
+}
+.dx-button-mode-contained.dx-button-danger {
+  border-radius: 20px;
+}
+.dx-button-mode-contained.dx-button-normal {
+  border-radius: 20px;
+}
+.dx-button-mode-contained.dx-button-default.dx-state-active,
+.dx-button-mode-contained.dx-button-default.dx-state-hover,
+.dx-button-mode-contained.dx-button-default.dx-state-focused {
+  background-color: #478FFC;
+}
+
+.dx-htmleditor {
+  border-color: transparent;
+}
+
+.dx-field-item-required .dx-label > span::after, .dx-field-item-required-mark {
+  color: #999;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label-before {
+  border-color:#FAFAFA;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-before {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label {
+  border-color:#FAFAFA;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label-after {
+  border-color:#FAFAFA;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label .dx-texteditor-label .dx-label-after {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.dx-texteditor-input {
+  background-color: #FAFAFA;
+  border-radius: 12px;
+}
+
+.dx-editor-outlined.dx-state-focused .dx-texteditor-input {
+  background-color: #EEF4FF;
+}
+
+.dx-editor-outlined.dx-state-focused.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label-after,
+.dx-editor-outlined.dx-state-hover.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label-after {
+  border-color:#478FFC;
+}
+
+.dx-editor-outlined.dx-state-focused.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label
+.dx-editor-outlined.dx-state-hover.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label {
+  border-color:#478FFC;
+}
+
+.dx-editor-outlined.dx-state-focused.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label-after,
+.dx-editor-outlined.dx-state-hover.dx-texteditor-with-floating-label.dx-texteditor-empty .dx-texteditor-label .dx-label-after {
+  border-color:#478FFC;
+}
+
+.dx-texteditor.dx-state-focused .dx-texteditor-label {
+  color:#478FFC;
+}
+.dx-texteditor.dx-state-hover .dx-texteditor-label,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label span{
+  color:#478FFC;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused .dx-texteditor-label .dx-label,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-hover .dx-texteditor-label .dx-label,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-hover .dx-texteditor-label .dx-label {
+  border-bottom-color:#478FFC;
+  border-top-color:#478FFC;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused .dx-texteditor-label .dx-label-before,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-hover .dx-texteditor-label .dx-label-before,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-before,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused .dx-texteditor-label .dx-label-after,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused.dx-state-hover .dx-texteditor-label .dx-label-after,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-hover .dx-texteditor-label .dx-label-before,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-hover .dx-texteditor-label .dx-label-after {
+  border-color:#478FFC;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused.dx-invalid .dx-texteditor-label .dx-label-after {
+  border-color: #d9534f;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-hover.dx-invalid .dx-texteditor-label .dx-label,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-state-focused.dx-state-hover.dx-invalid .dx-texteditor-label .dx-label span {
+  color:#d9534f;
+}
+
+.dx-checkbox-checked .dx-checkbox-icon {
+  color:#478FFC;
+}
+
+.dx-checkbox-checked.dx-state-focused .dx-checkbox-icon,
+.dx-checkbox-checked.dx-state-hover .dx-checkbox-icon,
+.dx-checkbox.dx-state-hover .dx-checkbox-icon,
+.dx-checkbox.dx-state-focused .dx-checkbox-icon   {
+  border: 2px solid #478FFC;
+  border-radius:5px;
+}
+
+.dx-checkbox-icon {
+  border-radius:5px;
+}
+
+.dx-toast-icon {
+  display:none;
+}
+
+.dx-toast-content {
+  font-weight: 400;
+}
+
+.dx-toast-error {
+  background-color: rgba(217, 83, 79, 0.8);
+}
+
+.dx-state-disabled.dx-widget {
+  opacity: 0.8;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-textarea .dx-texteditor-input-container, 
+.dx-editor-outlined.dx-texteditor-with-label.dx-textarea .dx-texteditor-input-container {
+  padding-top:0;
+}
+
+.dx-textarea {
+  height: 100px;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty,
+.dx-editor-outlined.dx-texteditor-with-floating-label {
+  border-radius: 12px;
+}
+
+.dx-dropdowneditor-icon {
+  border-radius:12px;
+}
+
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-textarea .dx-texteditor-input-container .dx-texteditor-input, 
+.dx-editor-outlined.dx-texteditor-with-label.dx-textarea .dx-texteditor-input-container .dx-texteditor-input {
+  padding-top:10px;
+}
+
+.dx-texteditor.dx-editor-outlined {
+  border-radius:12px;
+}
+
+.dx-datebox-date .dx-dropdowneditor-icon {
+  border-radius: 10px;
+}

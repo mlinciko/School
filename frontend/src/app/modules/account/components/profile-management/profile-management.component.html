@@ -1,0 +1,49 @@
+<div class="profile-delete">
+  <dx-button
+    stylingMode="contained"
+    text="Delete profile"
+    type="normal"
+    width="150px"
+    (onClick)="confirmDeleting()"
+    >
+  </dx-button>
+</div>
+<div class="profile-container">
+  <div class="user-data__profile">
+    <div class="user-data__face">
+      <ng-container *ngIf="formData.image; else noImage">
+        <img class="user-data__image" [src]="getUserImage(formData.image)" alt="image">
+      </ng-container>
+      <ng-template #noImage>
+        <fa-icon class="user-data__icon" [icon]="noImageIcon"></fa-icon>
+      </ng-template>
+      <fa-icon class="user-data__edit-icon" [icon]="editIcon" (click)="loadAvatar()"></fa-icon>
+    </div>
+  </div>
+  <fa-icon class="profile-edit" [icon]="editIcon" (click)="editForm()"></fa-icon>
+  <dx-form #form width="100%" [(formData)]='formData' [items]="formItems" [disabled]="!isFormEditing">
+  </dx-form>
+  <div class="profile-buttons">
+    <dx-button
+      stylingMode="contained"
+      text="Edit profile"
+      type="default"
+      width="50%"
+      [visible]="isFormEditing"
+      (onClick)="submitEditingForm()"
+        >
+    </dx-button>
+    <dx-button
+      stylingMode="contained"
+      text="Cancel"
+      type="normal"
+      width="50%"
+      [visible]="isFormEditing"
+      (onClick)="cancelEditingForm()"
+    >
+    </dx-button>
+  </div>
+</div>
+<dx-popup *ngIf="avatarDialog" title="Upload avatar" [(visible)]="avatarDialog" width="500px" height="200px">
+  <app-upload-avatar-dialog (onCloseEvent)="closeLoadAvatar()"></app-upload-avatar-dialog>
+</dx-popup>
